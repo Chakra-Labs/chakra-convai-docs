@@ -18,7 +18,7 @@
         <link rel="prev" href="../api-reference/">
       
       
-        <link rel="next" href="organizations/">
+        <link rel="next" href="dashboard/">
       
       
         
@@ -1135,10 +1135,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#two-components-one-database" class="md-nav__link">
+  <a href="#what-you-can-do" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Two components, one database
+        What you can do
       
     </span>
   </a>
@@ -1146,10 +1146,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#role-model" class="md-nav__link">
+  <a href="#what-chakra-labs-manages-for-you" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Role model
+        What Chakra Labs manages for you
       
     </span>
   </a>
@@ -1183,14 +1183,14 @@
   
   
     <li class="md-nav__item">
-      <a href="organizations/" class="md-nav__link">
+      <a href="dashboard/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Organizations & Projects
+    Dashboard & Analytics
   
 
     
@@ -1211,14 +1211,14 @@
   
   
     <li class="md-nav__item">
-      <a href="licenses/" class="md-nav__link">
+      <a href="projects/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    License Management
+    Projects
   
 
     
@@ -1239,14 +1239,14 @@
   
   
     <li class="md-nav__item">
-      <a href="packages/" class="md-nav__link">
+      <a href="voice/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Packages & Billing
+    Voice & Greeting
   
 
     
@@ -1267,14 +1267,14 @@
   
   
     <li class="md-nav__item">
-      <a href="fleet/" class="md-nav__link">
+      <a href="daily-limit/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    GPU Fleet
+    Daily Talk Time
   
 
     
@@ -1295,98 +1295,14 @@
   
   
     <li class="md-nav__item">
-      <a href="license-server/" class="md-nav__link">
+      <a href="account/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    License Server API
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="security/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Security Model
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="database/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Database & Migrations
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="setup/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Setup & Deployment
+    Account Settings
   
 
     
@@ -1434,10 +1350,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#two-components-one-database" class="md-nav__link">
+  <a href="#what-you-can-do" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Two components, one database
+        What you can do
       
     </span>
   </a>
@@ -1445,10 +1361,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#role-model" class="md-nav__link">
+  <a href="#what-chakra-labs-manages-for-you" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Role model
+        What Chakra Labs manages for you
       
     </span>
   </a>
@@ -1484,70 +1400,56 @@
 
 
 <h1 id="chakra-console-overview">Chakra Console — Overview</h1>
-<p><strong>Chakra Console</strong> (<code>chakra-ivr-admin</code>) is the management plane that sits alongside the <code>chakra-convai</code> engine. It gives Chakra Labs the tools to provision customers, issue and rotate licence keys, inspect GPU-fleet health, and see per-project usage analytics — all from a single web dashboard.</p>
+<p><strong>Chakra Console</strong> is your management dashboard for the conversational AI projects your organisation runs on Chakra ConvAI. Sign in with the credentials provided by Chakra Labs to access your organisation's workspace.</p>
 <hr />
-<h2 id="two-components-one-database">Two components, one database</h2>
+<h2 id="what-you-can-do">What you can do</h2>
 <table>
 <thead>
 <tr>
-<th>Component</th>
-<th>What it is</th>
+<th>Feature</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>chakra-license-hub/</code></td>
-<td><strong>Chakra Console</strong> — Next.js 16 admin dashboard. Handles dashboard analytics, organisations, projects, licence keys, packages, voice settings, and GPU fleet.</td>
+<td><strong>Dashboard</strong></td>
+<td>Live and historical usage analytics for all your projects</td>
 </tr>
 <tr>
-<td><code>chakra-license-server/</code></td>
-<td><strong>License Server</strong> — FastAPI microservice. Exposes the signed <code>/v2/verify</code> endpoint consumed by every <code>chakra-convai</code> instance and <code>/track-usage</code> for usage metering.</td>
+<td><strong>Projects</strong></td>
+<td>View each conversational AI project and its configuration</td>
+</tr>
+<tr>
+<td><strong>Voice &amp; Greeting</strong></td>
+<td>Set the AI voice and call greeting for each project</td>
+</tr>
+<tr>
+<td><strong>Daily Talk Time</strong></td>
+<td>Control how many minutes per caller each project allows per day</td>
+</tr>
+<tr>
+<td><strong>Password</strong></td>
+<td>Change your organisation account password</td>
 </tr>
 </tbody>
 </table>
-<p>Both services connect to the <strong>same PostgreSQL (Neon) admin database</strong>, so a key created in the dashboard is active at the speech gateway within seconds.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Chakra Console (Next.js)
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>       │ CRUD
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>       ▼
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  PostgreSQL (Neon)   ◄─── License Server (FastAPI)
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>       │                         │
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>       │                         ├─ /v2/verify   ◄── chakra-convai (startup check)
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>       │                         ├─ /v2/gemini-token ◄── Gemini Live sessions
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>       │                         └─ /track-usage ◄── chakra-convai (after each call)
-</span></code></pre></div>
 <hr />
-<h2 id="role-model">Role model</h2>
-<table>
-<thead>
-<tr>
-<th>Role</th>
-<th>Who</th>
-<th>Can do</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Chakra Labs Admin</strong></td>
-<td><code>ADMIN_USERS</code> env var</td>
-<td>Create/edit organisations, projects, packages, licence keys, console users</td>
-</tr>
-<tr>
-<td><strong>Organisation user</strong></td>
-<td>Per-organisation sign-in</td>
-<td>View own projects' dashboards, change daily talk-time, voice, and own password</td>
-</tr>
-</tbody>
-</table>
+<h2 id="what-chakra-labs-manages-for-you">What Chakra Labs manages for you</h2>
+<p>The following are set up by the Chakra Labs team and are not editable from your account:</p>
+<ul>
+<li>Licence keys and channel assignments</li>
+<li>Package tier</li>
+<li>Pipeline and Google access configuration</li>
+</ul>
+<p>Contact the Chakra Labs team if any of these need to change.</p>
 <hr />
 <h2 id="quick-links">Quick links</h2>
 <ul>
-<li><a href="organizations/">Organizations &amp; Projects</a> — customer hierarchy</li>
-<li><a href="licenses/">License Management</a> — keys, rotation, channels</li>
-<li><a href="packages/">Packages &amp; Billing</a> — package names and fleet sizing</li>
-<li><a href="fleet/">GPU Fleet</a> — live fleet health and monitoring</li>
-<li><a href="license-server/">License Server API</a> — <code>/v2/verify</code>, <code>/v2/gemini-token</code>, <code>/track-usage</code></li>
-<li><a href="security/">Security Model</a> — sessions, hashed keys, rate limiting</li>
-<li><a href="database/">Database &amp; Migrations</a> — schema, migrations, Neon setup</li>
+<li><a href="dashboard/">Dashboard &amp; Analytics</a> — usage charts and session stats</li>
+<li><a href="projects/">Projects</a> — your conversational AI deployments</li>
+<li><a href="voice/">Voice &amp; Greeting</a> — customise how your AI speaks and greets callers</li>
+<li><a href="daily-limit/">Daily Talk Time</a> — per-caller usage limits</li>
+<li><a href="account/">Account Settings</a> — change your password</li>
 </ul>
 
 

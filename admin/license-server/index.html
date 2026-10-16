@@ -15,10 +15,6 @@
         <link rel="canonical" href="https://chakra-labs.github.io/chakra-convai-docs/admin/license-server/">
       
       
-        <link rel="prev" href="../fleet/">
-      
-      
-        <link rel="next" href="../security/">
       
       
         
@@ -333,12 +329,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../" class="md-tabs__link">
           
   
@@ -1015,31 +1009,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
@@ -1057,7 +1048,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1103,14 +1094,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../organizations/" class="md-nav__link">
+      <a href="../dashboard/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Organizations & Projects
+    Dashboard & Analytics
   
 
     
@@ -1131,14 +1122,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../licenses/" class="md-nav__link">
+      <a href="../projects/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    License Management
+    Projects
   
 
     
@@ -1159,14 +1150,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../packages/" class="md-nav__link">
+      <a href="../voice/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Packages & Billing
+    Voice & Greeting
   
 
     
@@ -1187,306 +1178,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../fleet/" class="md-nav__link">
+      <a href="../daily-limit/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    GPU Fleet
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    License Server API
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    License Server API
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#post-v2verify" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        POST /v2/verify
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="POST /v2/verify">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#request" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Request
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#response-200-ok" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Response 200 OK
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-responses" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error responses
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#post-v2gemini-token" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        POST /v2/gemini-token
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="POST /v2/gemini-token">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#request_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Request
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#response-200-ok_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Response 200 OK
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rate-limiting" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Rate limiting
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-responses_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error responses
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#post-track-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        POST /track-usage
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="POST /track-usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#request_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Request
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#response-200-ok_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Response 200 OK
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#running-locally" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Running locally
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Running locally">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#environment-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Environment variables
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Docker
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../security/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Security Model
+    Daily Talk Time
   
 
     
@@ -1507,42 +1206,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../database/" class="md-nav__link">
+      <a href="../account/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Database & Migrations
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../setup/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Setup & Deployment
+    Account Settings
   
 
     
