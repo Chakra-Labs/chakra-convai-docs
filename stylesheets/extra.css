@@ -292,3 +292,15 @@
 .md-content {
   border-radius: 12px;
 }
+
+/* Console UI Screenshots & Cards */
+.md-typeset img {
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

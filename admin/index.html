@@ -1135,10 +1135,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#console-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Console Workspace
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#what-you-can-do" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What you can do
+        What You Can Do
       
     </span>
   </a>
@@ -1149,18 +1160,7 @@
   <a href="#what-chakra-labs-manages-for-you" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What Chakra Labs manages for you
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-links" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quick links
+        What Chakra Labs Manages For You
       
     </span>
   </a>
@@ -1350,10 +1350,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#console-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Console Workspace
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#what-you-can-do" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What you can do
+        What You Can Do
       
     </span>
   </a>
@@ -1364,18 +1375,7 @@
   <a href="#what-chakra-labs-manages-for-you" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What Chakra Labs manages for you
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-links" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quick links
+        What Chakra Labs Manages For You
       
     </span>
   </a>
@@ -1400,58 +1400,70 @@
 
 
 <h1 id="chakra-console-overview">Chakra Console — Overview</h1>
-<p><img alt="Chakra Console login — every conversation your agents have, in one place" src="../assets/console-login.png" /></p>
-<p><strong>Chakra Console</strong> is your management dashboard for the conversational AI projects your organisation runs on Chakra ConvAI. Sign in with the credentials provided by Chakra Labs to access your organisation's workspace.</p>
+<p><img alt="Chakra Console login — sign in to manage your voice agents" src="../assets/console-login.png" /></p>
+<p><strong>Chakra Console</strong> is the web management interface for your organisation's conversational AI deployments running on Chakra ConvAI. Sign in with the credentials provided by Chakra Labs to manage voice configuration, caller daily talk times, greetings, and live analytics.</p>
 <hr />
-<h2 id="what-you-can-do">What you can do</h2>
+<h2 id="console-workspace">Console Workspace</h2>
+<p><img alt="Chakra Console Settings View" src="../assets/console-settings-full.png" /></p>
+<p>The console provides a unified interface organized into three primary areas:</p>
+<ol>
+<li><strong>Overview / Dashboard</strong>: Monitor live and historical call volume, minute consumption, peak hours, and concurrency.</li>
+<li><strong>Settings</strong>: Select any project to manage:<ul>
+<li><strong>Agent voice</strong>: Upload a 5–10s reference clip for instant custom voice cloning or pick from 11 curated preset voices.</li>
+<li><strong>Daily talk time per user</strong>: Configure caller talk-time caps with automated Sri Lanka midnight resets and reminder prompts.</li>
+<li><strong>Call greeting</strong>: Choose between instant pre-recorded welcome audio or dynamic LLM-generated greetings.</li>
+<li><strong>Good to know</strong>: Operational rules detailing 10-minute propagation and active session protection.</li>
+</ul>
+</li>
+<li><strong>Account</strong>: Securely update your organization password and view account details.</li>
+</ol>
+<hr />
+<h2 id="what-you-can-do">What You Can Do</h2>
 <table>
 <thead>
 <tr>
 <th>Feature</th>
+<th>Section</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Dashboard</strong></td>
-<td>Live and historical usage analytics for all your projects</td>
+<td><a href="dashboard/">Dashboard &amp; Analytics</a></td>
+<td>Real-time and historical call metrics and minute analytics</td>
 </tr>
 <tr>
 <td><strong>Projects</strong></td>
-<td>View each conversational AI project and its configuration</td>
+<td><a href="projects/">Projects</a></td>
+<td>Select and configure project deployments</td>
 </tr>
 <tr>
 <td><strong>Voice &amp; Greeting</strong></td>
-<td>Set the AI voice and call greeting for each project</td>
+<td><a href="voice/">Voice &amp; Greeting</a></td>
+<td>Custom voice cloning, preset voices, and opening greeting setup</td>
 </tr>
 <tr>
 <td><strong>Daily Talk Time</strong></td>
-<td>Control how many minutes per caller each project allows per day</td>
+<td><a href="daily-limit/">Daily Talk Time</a></td>
+<td>Per-caller daily limits, phone tracking, and midnight resets</td>
 </tr>
 <tr>
-<td><strong>Password</strong></td>
-<td>Change your organisation account password</td>
+<td><strong>Account</strong></td>
+<td><a href="account/">Account Settings</a></td>
+<td>Password changes and organization access</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="what-chakra-labs-manages-for-you">What Chakra Labs manages for you</h2>
-<p>The following are set up by the Chakra Labs team and are not editable from your account:</p>
+<h2 id="what-chakra-labs-manages-for-you">What Chakra Labs Manages For You</h2>
+<p>The following core parameters are managed by the Chakra Labs infrastructure team:</p>
 <ul>
-<li>Licence keys and channel assignments</li>
-<li>Package tier</li>
-<li>Pipeline and Google access configuration</li>
+<li>Licence keys and telephony SIP trunk channel assignments</li>
+<li>Subscription package tier and concurrent worker limits</li>
+<li>Speech-to-text, LLM, and TTS pipelines (e.g. Gemini Live, Chakra Voice)</li>
 </ul>
-<p>Contact the Chakra Labs team if any of these need to change.</p>
-<hr />
-<h2 id="quick-links">Quick links</h2>
-<ul>
-<li><a href="dashboard/">Dashboard &amp; Analytics</a> — usage charts and session stats</li>
-<li><a href="projects/">Projects</a> — your conversational AI deployments</li>
-<li><a href="voice/">Voice &amp; Greeting</a> — customise how your AI speaks and greets callers</li>
-<li><a href="daily-limit/">Daily Talk Time</a> — per-caller usage limits</li>
-<li><a href="account/">Account Settings</a> — change your password</li>
-</ul>
+<p>Contact Chakra Labs support if your pipeline or capacity needs change.</p>
 
 
 

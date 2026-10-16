@@ -1219,22 +1219,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ai-voice" class="md-nav__link">
+  <a href="#agent-voice" class="md-nav__link">
     <span class="md-ellipsis">
       
-        AI Voice
+        Agent Voice
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="AI Voice">
+    <nav class="md-nav" aria-label="Agent Voice">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#changing-the-voice" class="md-nav__link">
+  <a href="#custom-voice-cloning" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Changing the voice
+        Custom Voice Cloning
       
     </span>
   </a>
@@ -1242,10 +1242,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#available-voices" class="md-nav__link">
+  <a href="#preset-voice" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Available voices
+        Preset Voice
       
     </span>
   </a>
@@ -1273,7 +1273,7 @@
   <a href="#greeting-modes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Greeting modes
+        Greeting Modes
       
     </span>
   </a>
@@ -1281,21 +1281,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#uploading-a-recorded-greeting" class="md-nav__link">
+  <a href="#uploading-your-own-opening" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Uploading a recorded greeting
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#switching-to-auto-greeting" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Switching to auto greeting
+        Uploading Your Own Opening
       
     </span>
   </a>
@@ -1304,6 +1293,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#good-to-know" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Good to Know
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1406,22 +1406,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ai-voice" class="md-nav__link">
+  <a href="#agent-voice" class="md-nav__link">
     <span class="md-ellipsis">
       
-        AI Voice
+        Agent Voice
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="AI Voice">
+    <nav class="md-nav" aria-label="Agent Voice">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#changing-the-voice" class="md-nav__link">
+  <a href="#custom-voice-cloning" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Changing the voice
+        Custom Voice Cloning
       
     </span>
   </a>
@@ -1429,10 +1429,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#available-voices" class="md-nav__link">
+  <a href="#preset-voice" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Available voices
+        Preset Voice
       
     </span>
   </a>
@@ -1460,7 +1460,7 @@
   <a href="#greeting-modes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Greeting modes
+        Greeting Modes
       
     </span>
   </a>
@@ -1468,21 +1468,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#uploading-a-recorded-greeting" class="md-nav__link">
+  <a href="#uploading-your-own-opening" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Uploading a recorded greeting
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#switching-to-auto-greeting" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Switching to auto greeting
+        Uploading Your Own Opening
       
     </span>
   </a>
@@ -1491,6 +1480,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#good-to-know" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Good to Know
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1512,58 +1512,98 @@
 
 
 <h1 id="voice-greeting">Voice &amp; Greeting</h1>
-<p>Each project can be configured with a specific <strong>AI voice</strong> and a <strong>call greeting</strong>. These settings control how callers experience the first moments of a conversation.</p>
+<p>Each project in the Chakra Console can be configured with a specific <strong>Agent Voice</strong> and <strong>Call Greeting</strong>. These settings control how callers experience the voice and opening seconds of every conversation.</p>
 <hr />
-<h2 id="ai-voice">AI Voice</h2>
-<p>The <strong>Voice</strong> setting determines which text-to-speech voice the AI uses when speaking to callers.</p>
-<h3 id="changing-the-voice">Changing the voice</h3>
+<h2 id="agent-voice">Agent Voice</h2>
+<p><img alt="Agent Voice Settings in Chakra Console" src="../../assets/console-voice.png" /></p>
+<p>The <strong>Agent Voice</strong> setting determines how your conversational AI sounds. You can either upload a <strong>Custom Voice</strong> clone or select a <strong>Preset Voice</strong> from the curated voice library.</p>
+<h3 id="custom-voice-cloning">Custom Voice Cloning</h3>
+<p>Upload a short reference audio recording of the voice you want your agent to speak in.</p>
+<p><img alt="Custom Voice Upload" src="../../assets/console-custom-voice.png" /></p>
 <ol>
-<li>Open the project from the <strong>Projects</strong> page.</li>
-<li>Find the <strong>Voice</strong> card and click <strong>Edit</strong>.</li>
-<li>Choose a voice from the dropdown list.</li>
-<li>Click <strong>Save</strong>.</li>
+<li>Under <strong>Upload a recording</strong>, click <strong>Choose File</strong> and select your voice clip.<ul>
+<li><strong>Audio format</strong>: WAV format, 5 to 10 seconds long.</li>
+<li><strong>Acoustic conditions</strong>: Exactly one speaker, speaking naturally in a quiet room with no background music, echo, or ambient noise.</li>
+<li><strong>Consent</strong>: Only use a voice for which you have the speaker's explicit permission.</li>
+</ul>
+</li>
+<li>Enter the transcript in the <strong>What is said in the clip</strong> box.<ul>
+<li>Enter the transcript <strong>word-for-word</strong> in the spoken language (e.g., Sinhala: <code>ආයුබෝවන්, ඔබට සහය වෙන්නේ කෙසේද?</code>).</li>
+<li>The text must match the recording exactly — a wrong or missing word makes the voice stumble.</li>
+</ul>
+</li>
+<li>Click <strong>Upload voice</strong>.</li>
 </ol>
-<p>The change takes effect on the next new session — active calls are not interrupted.</p>
-<h3 id="available-voices">Available voices</h3>
-<p>Voices are provided by the underlying speech pipeline (e.g., Gemini Live). The available options depend on your project's pipeline configuration. Common voices include:</p>
+<p>The voice is deployed and used on new calls within <strong>about a minute</strong>. You can return to the standard voice at any time.</p>
+<hr />
+<h3 id="preset-voice">Preset Voice</h3>
+<p>If your lines use a preset voice, you can choose from the built-in library of expressive character voices:</p>
+<p><img alt="Preset Voice Selection" src="../../assets/console-preset-voice.png" /></p>
 <table>
 <thead>
 <tr>
-<th>Voice name</th>
-<th>Character</th>
+<th>Voice Name</th>
+<th>Gender &amp; Tone Profile</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Aoede</td>
-<td>Warm, natural</td>
+<td><strong>Default</strong></td>
+<td>Set in the application configuration</td>
 </tr>
 <tr>
-<td>Charon</td>
-<td>Clear, professional</td>
+<td><strong>Leda</strong></td>
+<td>Female · Youthful</td>
 </tr>
 <tr>
-<td>Fenrir</td>
-<td>Deeper, authoritative</td>
+<td><strong>Orus</strong></td>
+<td>Male · Firm</td>
 </tr>
 <tr>
-<td>Kore</td>
-<td>Friendly, conversational</td>
+<td><strong>Alnilam</strong></td>
+<td>Male · Firm</td>
 </tr>
 <tr>
-<td>Puck</td>
-<td>Energetic, upbeat</td>
+<td><strong>Sadachbia</strong></td>
+<td>Male · Lively</td>
+</tr>
+<tr>
+<td><strong>Algenib</strong></td>
+<td>Male · Gravelly</td>
+</tr>
+<tr>
+<td><strong>Sadaltager</strong></td>
+<td>Male · Knowledgeable</td>
+</tr>
+<tr>
+<td><strong>Laomedeia</strong></td>
+<td>Female · Upbeat</td>
+</tr>
+<tr>
+<td><strong>Zubenelgenubi</strong></td>
+<td>Male · Casual</td>
+</tr>
+<tr>
+<td><strong>Algieba</strong></td>
+<td>Male · Smooth</td>
+</tr>
+<tr>
+<td><strong>Despina</strong></td>
+<td>Female · Smooth</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If your project uses the <strong>Chakra Voice</strong> pipeline, voice selection works differently — a reference audio clip is used instead of a named voice. Contact the Chakra Labs team for assistance.</p>
-</div>
+<p>To change the voice:</p>
+<ol>
+<li>Click on the desired voice card to highlight it.</li>
+<li>Click <strong>Save voice</strong>.</li>
+</ol>
+<p>Changes apply to new calls within <strong>10 minutes</strong>.</p>
 <hr />
 <h2 id="call-greeting">Call Greeting</h2>
-<p>The <strong>Greeting</strong> controls what happens the moment a call or session connects.</p>
-<h3 id="greeting-modes">Greeting modes</h3>
+<p>The <strong>Greeting</strong> controls what callers hear the moment a call or session connects.</p>
+<p><img alt="Call Greeting Settings in Chakra Console" src="../../assets/console-greeting.png" /></p>
+<h3 id="greeting-modes">Greeting Modes</h3>
 <table>
 <thead>
 <tr>
@@ -1573,34 +1613,44 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Recorded</strong></td>
-<td>A pre-uploaded audio clip plays immediately when the call connects, before the AI begins listening. Ideal for branded welcome messages.</td>
+<td><strong>Recorded opening</strong></td>
+<td>Plays the instant the call connects with zero latency. The agent then continues smoothly, and welcomes a returning caller by what they previously called about.</td>
 </tr>
 <tr>
-<td><strong>Auto</strong></td>
-<td>The AI generates and speaks the opening greeting itself, based on its instructions.</td>
-</tr>
-<tr>
-<td><em>(None)</em></td>
-<td>The application handles the greeting in its own code.</td>
+<td><strong>Generated each call</strong></td>
+<td>The agent composes the whole greeting dynamically based on its prompt. Callers wait a few seconds before hearing the agent speak.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="uploading-a-recorded-greeting">Uploading a recorded greeting</h3>
+<div class="admonition info">
+<p class="admonition-title">Automatic initial recording</p>
+<p>If <strong>Recorded opening</strong> is chosen but no custom recording has been uploaded, the app automatically records its standard opening line itself, in the current voice, on its first call.</p>
+</div>
+<h3 id="uploading-your-own-opening">Uploading Your Own Opening</h3>
+<p>You can upload a custom branded audio clip to play as the opening greeting:</p>
 <ol>
-<li>Open the project and click <strong>Edit</strong> on the <strong>Greeting</strong> card.</li>
-<li>Select <strong>Recorded</strong> as the greeting mode.</li>
-<li>Upload an audio file (WAV or MP3, up to 5 MB).</li>
-<li>Enter the <strong>greeting text</strong> — the transcript of what the clip says. This helps the AI understand what has already been said before it starts listening.</li>
-<li>Click <strong>Save</strong>.</li>
+<li>Under <strong>Upload your own opening</strong>, click <strong>Choose File</strong>.<ul>
+<li><strong>Format</strong>: 16-bit WAV, 1 to 20 seconds.</li>
+<li><strong>Scope</strong>: Record the fixed opening line only (e.g., brand welcome). The AI agent automatically appends the dynamic context, such as recognizing returning callers.</li>
+</ul>
+</li>
+<li>In <strong>What is said in it</strong>, enter the verbatim text (e.g., <code>ආයුබෝවන්! ගොවි මිතුරු වෙත ඔබව සාදරයෙන් පිළිගන්නවා.</code>).<ul>
+<li>The agent is informed that it has already spoken this line so it does not repeat it.</li>
+</ul>
+</li>
+<li>Click <strong>Upload</strong>.</li>
 </ol>
-<h3 id="switching-to-auto-greeting">Switching to auto greeting</h3>
-<ol>
-<li>Open the <strong>Greeting</strong> card and click <strong>Edit</strong>.</li>
-<li>Select <strong>Auto</strong>.</li>
-<li>Click <strong>Save</strong>.</li>
-</ol>
-<p>The AI will generate a natural opening based on its prompt/instructions.</p>
+<hr />
+<h2 id="good-to-know">Good to Know</h2>
+<p><img alt="Console Operational Guidelines" src="../../assets/console-good-to-know.png" /></p>
+<ul>
+<li><strong>Fast Synchronization</strong>: Changes reach your agents within <strong>10 minutes</strong>. No server or container restart is needed.</li>
+<li><strong>Active Call Safety</strong>: Sessions already in progress keep the voice and limit they started with to prevent mid-call disruption.</li>
+<li><strong>Midnight Reset</strong>: Each user's talk-time allowance resets at <strong>midnight (Sri Lanka time)</strong>; all their sessions that day count towards it.</li>
+<li><strong>Caller Reminders</strong>: Near the end of their allowance, the caller hears a short reminder prompt. When no time remains, they are asked, politely, to call back tomorrow.</li>
+<li><strong>Revert Anytime</strong>: You can return to the standard voice at any time.</li>
+<li><strong>Specialized Voice Customizations</strong>: To change anything else about how your agent sounds or speaks (e.g. speed, inflection, vocabulary), contact the Chakra Labs team.</li>
+</ul>
 
 
 
