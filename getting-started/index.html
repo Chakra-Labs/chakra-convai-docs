@@ -1605,11 +1605,11 @@
 </ul>
 <hr />
 <h2 id="installation">Installation</h2>
-<p><code>chakra-convai</code> is distributed as a compiled, licensed wheel on Chakra Labs' private Gemfury package index:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>chakra-convai<span class="w"> </span>--extra-index-url<span class="w"> </span><span class="s2">"https://</span><span class="si">${</span><span class="nv">FURY_DEPLOY_TOKEN</span><span class="si">}</span><span class="s2">:@pypi.fury.io/chakra-labs/"</span>
+<p><code>chakra-convai</code> is distributed as a compiled, licensed wheel on Chakra Labs' private package index (<code>pypi.chakralabsai.com</code>, login <code>deploy</code> with the install token Chakra Labs gives you):</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>chakra-convai<span class="w"> </span>--extra-index-url<span class="w"> </span><span class="s2">"https://deploy:</span><span class="si">${</span><span class="nv">FURY_DEPLOY_TOKEN</span><span class="si">}</span><span class="s2">@pypi.chakralabsai.com/simple/"</span>
 </span></code></pre></div>
 <blockquote>
-<p><strong>Security Note:</strong> Keep your <code>FURY_DEPLOY_TOKEN</code> stored in CI/CD secrets or local environment files (<code>~/.chakra/gemfury.env</code>). Never commit credentials to source control.</p>
+<p><strong>Security Note:</strong> Keep your <code>FURY_DEPLOY_TOKEN</code> stored in CI/CD secrets or local environment files. Never commit credentials to source control.</p>
 </blockquote>
 <hr />
 <h2 id="scaffolding-a-new-application-chakra-convai-init">Scaffolding a New Application: <code>chakra-convai init</code></h2>
@@ -1681,7 +1681,7 @@
 </span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="k">COPY</span><span class="w"> </span>requirements.txt<span class="w"> </span>.
 </span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="k">RUN</span><span class="w"> </span>--mount<span class="o">=</span><span class="nv">type</span><span class="o">=</span>secret,id<span class="o">=</span>fury,env<span class="o">=</span>FURY_DEPLOY_TOKEN<span class="w"> </span><span class="se">\</span>
 </span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">    </span>pip<span class="w"> </span>install<span class="w"> </span>--no-cache-dir<span class="w"> </span>-r<span class="w"> </span>requirements.txt<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="w">      </span>--extra-index-url<span class="w"> </span><span class="s2">"https://</span><span class="si">${</span><span class="nv">FURY_DEPLOY_TOKEN</span><span class="si">}</span><span class="s2">:@pypi.fury.io/chakra-labs/"</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="w">      </span>--extra-index-url<span class="w"> </span><span class="s2">"https://deploy:</span><span class="si">${</span><span class="nv">FURY_DEPLOY_TOKEN</span><span class="si">}</span><span class="s2">@pypi.chakralabsai.com/simple/"</span>
 </span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
 </span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>.
 </span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>
