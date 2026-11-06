@@ -1710,7 +1710,7 @@
 <p><code>wait_line</code> (Chakra Voice pipeline, optional): a short line the agent says
 the moment it starts a tool (a knowledge-base search, the weather, a price),
 so the caller is not left in silence while the answer is looked up. A dotted
-path into <code>config/instructions.json</code>; a list of lines is used in turn. Write
+path into <code>config/instructions.json</code>; with a list of lines, one is picked at random each time, never the same twice running. Write
 it in the call's language, at least about 20 characters (Chakra TTS mumbles
 very short pieces), for example <code>"හරි, මම ඒ ගැන ටිකක් හොයලා බලන්නම්."</code>. It is
 recorded once in the call's voice and played from that recording; it is not
